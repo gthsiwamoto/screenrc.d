@@ -1,0 +1,22 @@
+defutf8 on
+defencoding utf8
+encoding utf-8 utf-8
+
+# Escape key is C-t, literal is a.
+escape ^Ta
+
+bind x
+bind ^x
+
+startup_message off
+autodetach on
+vbell off
+
+caption always "%-w%10L>%{=b bw}%n %t%{-}%+w%-0="
+hardstatus
+
+shelltitle "$ |bash"
+
+termcapinfo xterm* ti@:te@
+
+defscrollback 10000
